@@ -182,8 +182,8 @@ body {
 }
 
 
-.audio-player {
-    z-index: -1; position: relative;
+.nav-container {
+    z-index: 2; position: relative;
 }
 
 .section-container {
