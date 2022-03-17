@@ -129,6 +129,6 @@ h2 {
 }
 
 .home-page-link {
-  text-decoration: none;
+  text-decoration: none !important;
   color: black;
 }
