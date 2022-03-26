@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fetch Music</title>
+    <title>Fetch Weather</title>
     <link rel="stylesheet" href="main.css">
     <script src="script.js" defer></script>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://code.jscharting.com/2.9.0/jscharting.js"></script>
 </head>
 
 
@@ -15,27 +18,27 @@
     <header class="logo main-header">
         <h1>
             <a href="index.html" class="home-page-link">
-                Fetch Music
-                <img src="img/wave.png" alt="" class="wave">
+                Fetch Weather
+                <img src="img/weather-icon.png" alt="" class="weather-icon" width="75" height="40">
             </a>
         </h1>
     </header>
     <main class="main-container">
         <div id="search-bar">
-            <input type="text" placeholder="Artist Name" class="artist-input" id="artist-input">
-            <button type="button" class="search-btn" onclick="searchArtist()" id="search-btn">search</button>
-        </div>
-        <div class="api-radio">
-            <input type="radio" id="iTunes" name="API" value="iTunes" checked>
-            <label for="iTunes">iTunes</label> 
-            <input type="radio" id="Spotify" name="API" value="Spotify">
-            <label for="Spotify">Spotify</label> 
+            <input type="text" placeholder="City Name" class="city-input" id="city-input">
+            <select name="days" id="days-num" required>
+                <option value="0" selected disabled>days</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+            <button type="button" class="search-btn" onclick="searchCity()" id="search-btn">search</button>
         </div>
         <div class="center">
-            <h2 id="listen-to">What do you want to listen to?</h2>
-            <img src="./img/panda.jpg" alt="" id="panda">
+            <h2 id="going-to">Where do you want to be?</h2>
+            <img src="./img/astro.jpg" alt="" id="astro">
         </div>
-        <div class="albums"></div>
+        <div class="results"></div>
     </main>
 </body>
 

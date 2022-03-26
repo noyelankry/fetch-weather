@@ -13,26 +13,22 @@ body {
   margin-bottom: 50px;
 }
 
-.container {
-  max-width: 1050px;
-  width: 90%;
-  margin: auto;
-}
-
-.wave {
-    height: 40px;
+.weather-icon {
+    height: 50;
+    object-fit: cover;
+    object-position: -20px;
     margin: 0;
     padding-top: 12px;
 }
 
-.artist-input {
+.city-input {
     font-family: Poppins; 
     padding: 5px;
     margin-left: 10%;
     margin-top: 1%;
 }
 
-.albums {
+.results {
     padding: 5px;
     margin-left: 10%;
     margin-top: 1%;
@@ -41,7 +37,7 @@ body {
 .search-btn {
     font-family: Poppins; 
     padding: 5px;
-    background-color: rgb(143, 202, 198);
+    background-color: rgb(119, 189, 156);
     border: none;
     height: 90%;
     margin: auto;
@@ -61,38 +57,13 @@ body {
     width: 280px;
 }
 
-
-.nav-container {
-    z-index: 2; position: relative;
-}
-
-.section-container {
-    margin: 5%;
-    padding-left: 5%;
-}
-
-h2 {
-    margin-bottom: 5vh;
-    font-size: 1.7rem;
-}
-
-.click-here {
-    text-decoration: none;
-    color: rgb(86, 163, 158) ;
-}
-
-.click-here:hover {
-    text-decoration: none;
-    color: rgb(52, 124, 119) ;
-}
-
-#panda {
+#astro {
     display: block;
     margin: auto;
-    width: 50vh;
+    width: 40vh;
 }
 
-#listen-to {
+#going-to {
     display: flex;  
     position: relative;
     justify-content: space-around;
@@ -110,7 +81,7 @@ h2 {
   height: 30px;
   position: fixed;
   bottom: 0;
-  background-color: rgb(111, 184, 179, 90%);
+  background-color: rgba(119, 189, 156, 0.9);
 }
 
 .main-header {
@@ -133,17 +104,18 @@ h2 {
   color: black;
 }
 
-.api-radio {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.api-radio > input {
+#days-num {
+  display: inline-flex;
   margin: 5px;
+  width: 60px;
+  font-family: Poppins;
 }
 
-.artwork-img {
-  width: 250px;
+.current-weather {
+  display: flex;
 }
+
+.results {
+  width: 70%;
+}
+
